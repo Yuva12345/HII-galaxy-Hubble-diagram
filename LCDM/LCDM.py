@@ -201,7 +201,7 @@ plt.show()
 
 
 def median_and_cred(samples):
-    median = np.mean(samples)
+    median = np.median(samples)
     low = np.percentile(samples, 16)
     high = np.percentile(samples, 84)
     return median, high - median, median - low
